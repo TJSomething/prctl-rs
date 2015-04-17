@@ -1,4 +1,4 @@
-#![cfg(target_os="linux")]
+#![cfg(any(target_os="linux", target_os="android"))]
 
 //! Module provides safe abstraction over the prctl interface.
 //! Provided functions map to a single `prctl()` call, although some of them
